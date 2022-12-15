@@ -1,0 +1,23 @@
+	"icons": {
+		"32": "icon_32.png"
+	},
+	"content_scripts": [{
+		"matches": ["<all_urls>"],
+		"js": ["script.js"]
+	}],
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"browser_action": {
+		"default_icon": "icon_32.png",
+		"default_title": "選択した文字列に「とは」をつけて検索"
+	},
+	"permissions": [
+		"tabs",
+		"background",
+		"http://*/*",
+		"https://*/*"
+	]
+}
+
+古いバージョンのサンプルmanifest
