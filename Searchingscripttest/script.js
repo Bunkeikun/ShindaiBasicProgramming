@@ -7,11 +7,11 @@ chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
 
 function f() {
   const selectedText = window.getSelection().toString();
-    console.log(selectedText);
+  console.log(selectedText);  
   if(selectedText == ""){
     alert("テキストを選択してください。")
   }
   else{
-    chrome.tabs.create({url: "https://www.google.com/search?q=${selectedText}+とは"});
+    window.open("https://www.google.com/search?q=" + selectedText + "+とは");
   }
 }

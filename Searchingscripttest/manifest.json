@@ -2,7 +2,7 @@
 	"manifest_version": 3,
 	"name": "Searching Addon test",
 	"description": "Select Letters and push Action Button to search.",
-	"version": "0.1",
+	"version": "0.21",
 	"icons": {
 		"32": "icon_32.png"
 	},
@@ -17,8 +17,8 @@
 		}
 	],
 	"background" :{
-		"servise_worker": "background.js"
+		"service_worker": "background.js"
 	},
-	"permissions": ["storage","tabs","scripting"],
+	"permissions": ["storage","tabs","activeTab","scripting"],
 	"host_permissions": ["<all_urls>"]
 }
